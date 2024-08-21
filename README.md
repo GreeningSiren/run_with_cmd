@@ -1,5 +1,4 @@
 # Run with CMD
-## This program only works on Windows
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
