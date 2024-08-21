@@ -37,13 +37,13 @@ python run_with_cmd.py "echo Test!"
 ```
 
 ### 4. Build Executable (Optional)
-Install PyInstaller if you haven't already:
+Install PyInstaller and Pillow if you haven't already:
 ```bash
-pip install pyinstaller
+pip install pyinstaller pillow
 ```
-Once all dependencies are installed, you can build an executable from your Python script. Assuming your main Python file is named main.py, run the following command:
+Once all dependencies are installed, you can build an executable from your Python script:
 ```bash
-pyinstaller --onefile run_with_cmd.py
+pyinstaller --onefile run_with_cmd.py -i icon.png
 ```
 --onefile: This option tells PyInstaller to bundle everything into a single executable file.
 
