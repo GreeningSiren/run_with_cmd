@@ -10,7 +10,8 @@ def main():
         # Run the command with cmd
         print(Fore.CYAN + "Running:" + Fore.RESET)
         print(Back.RED + f"cmd /c {command}" + Back.RESET + "\n")
-        subprocess.run(['cmd', '/c', command])
+#        subprocess.run(['cmd', '/c', command], shell=True)
+        subprocess.run(command, shell=True)
     else:
         print("No command provided.")
 
