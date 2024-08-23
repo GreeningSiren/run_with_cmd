@@ -9,7 +9,7 @@ def main():
         command = sys.argv[1]
         # Run the command with cmd
         print(Fore.CYAN + "Running:" + Fore.RESET)
-        print(Back.RED + f"cmd /c {command}" + Back.RESET + "\n")
+        print(Back.RED + f'"{command}"' + Back.RESET + "\n")
 #        subprocess.run(['cmd', '/c', command], shell=True)
         subprocess.run(command, shell=True)
     else:
